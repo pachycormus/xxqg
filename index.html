@@ -1,0 +1,15 @@
+<div>
+    <button><a id="login" href="#"><h1>点击登录跳转学习强国app</h1></a></button>
+</div>
+<div id="wx"></div>
+
+<script>
+    function load() {
+        let search = window.location.search
+        //search = search.substring(1,search.length)
+        document.getElementById("login").setAttribute("href","dtxuexi://appclient/page/study_feeds"+search)
+        document.getElementById("login").click()
+    }
+    load()
+
+</script>
