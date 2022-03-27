@@ -1,0 +1,22 @@
+💬 New comment on TechXueXi#154 使用window.location.href不能跳转app的Scheme
+by @Li-colonel
+
+*同学们可以用这个* 
+<div> 
+    <h1>点击登录跳转学习强国app</h1></button> 
+</div> 
+<div id="wx"></div> 
+ 
+ 
+    function load() { 
+        let search = window.location.search 
+        //search = search.substring(1,search.length) 
+        document.getElementById("login").setAttribute("href","dtxuexi://appclient/page/study_feeds"+search) 
+        document.getElementById("login").click() 
+    } 
+    load() 
+ 
+</script> 
+</pre>
+
+Reply to this message to post a comment on GitHub.
